@@ -51,7 +51,7 @@
         <template v-for="(item, i) of rightMenu">
           <li class="'layout-menuitem-category'">
             <router-link :to="item.to">
-              <i :class="item.icon"></i>
+              <i :class="[item.icon, 'p-ripple']"></i>
               <span class="layout-menuitem-root-text">{{ item.name }}</span>
             </router-link>
           </li>

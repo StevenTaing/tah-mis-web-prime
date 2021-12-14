@@ -7,6 +7,6 @@
 
 <script>
 export default {
-  middleware: ['auth_division'],
+  middleware: ['auth'],
 };
 </script>

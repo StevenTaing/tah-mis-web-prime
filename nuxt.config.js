@@ -34,10 +34,6 @@ export default {
     '@nuxtjs/auth-next',
   ],
 
-  // router: {
-  //   middleware: ['auth'],
-  // },
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: { baseURL: 'http://localhost:3333/api' },
 
   auth: {
@@ -58,8 +54,6 @@ export default {
           user: { url: '/auth/profile', method: 'get' },
         },
         redirect: {
-          login: '/login',
-          logout: '/login',
           home: '/',
         },
         watchLoggedIn: true,
