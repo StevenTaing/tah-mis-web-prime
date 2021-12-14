@@ -34,6 +34,9 @@ export default {
     '@nuxtjs/auth-next',
   ],
 
+  // router: {
+  //   middleware: ['auth'],
+  // },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: { baseURL: 'http://localhost:3333/api' },
 
@@ -54,6 +57,12 @@ export default {
           logout: { url: '/auth/logout', method: 'post' },
           user: { url: '/auth/profile', method: 'get' },
         },
+        redirect: {
+          login: '/login',
+          logout: '/login',
+          home: '/',
+        },
+        watchLoggedIn: true,
       },
     },
   },
@@ -68,8 +77,11 @@ export default {
       'DataTable',
       'Dialog',
       'Toast',
+      'Sidebar',
+      'OverlayPanel',
+      'Menu',
     ],
-    directives: ['Tooltip', 'Badge'],
+    directives: ['Tooltip', 'Badge', 'ripple'],
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
