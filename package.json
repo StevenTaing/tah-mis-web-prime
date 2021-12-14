@@ -16,5 +16,11 @@
     "primeflex": "^2.0.0",
     "primeicons": "^5.0.0",
     "primevue": "^2.7.0"
+  },
+  "devDependencies": {
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^10.2.0"
   }
 }

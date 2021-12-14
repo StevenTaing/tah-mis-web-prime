@@ -15,10 +15,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['primeflex/primeflex.css'],
+  css: ['primeflex/primeflex.css', '~/assets/styles/layout.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/division.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -59,9 +59,16 @@ export default {
   },
 
   primevue: {
-    theme: 'md-light-indigo',
+    theme: 'saga-blue',
     ripple: true,
-    components: ['InputText', 'Button', 'DataTable', 'Dialog'],
+    components: [
+      'InputText',
+      'Password',
+      'Button',
+      'DataTable',
+      'Dialog',
+      'Toast',
+    ],
     directives: ['Tooltip', 'Badge'],
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
